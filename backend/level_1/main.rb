@@ -20,7 +20,7 @@ def generate_data data:
     price      = days * car["price_per_day"] + rental["distance"] * car["price_per_km"]
     output["rentals"] << { "id": rental["id"], "price": price }
   end
-  ap output
+  output
 end
 
 def main
