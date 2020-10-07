@@ -30,7 +30,7 @@ def calculate_price rental, car
   days  = nb_days(rental)
   price = 0
 
-  (1..days).each do | index |
+  for index in 1..days
     price += car["price_per_day"] * decrease_rate(index)
   end
   price += rental["distance"] * car["price_per_km"]
