@@ -8,6 +8,7 @@ class JsonToHash
       JSON.parse file
     rescue => error
       puts error.message
+      error
     end
   end
 
