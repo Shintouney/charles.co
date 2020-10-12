@@ -2,15 +2,25 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import Navbar from './Navbar';
+import NavMenu from './NavMenu';
+import NavBody from './NavBody';
 import * as serviceWorker from './serviceWorker';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import $ from 'jquery';
 import Popper from 'popper.js';
+import DateTimePicker from 'react-datetime-picker'
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Navbar />
+    <div class="container">
+      <div class="row">
+      <NavMenu />
+      <NavBody />
+      </div>
+    </div>
   </React.StrictMode>,
   document.getElementById('root')
 );
